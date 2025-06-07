@@ -1,89 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - M. Sandeesha</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0mm;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+    }
+
+    .a4-page {
+      width: 210mm;
+      height: 297mm;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 0mm;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      position: relative;
+      left: 50px;
+      font-size: 42px;
+      color: black;
+      top: 10px;
+    }
+
+    h2 {
+      position: relative;
+      left: 40px;
+      top: 0.1px;
+      font-size: 17px;
+    }
+
+    h2 a {
+      margin-left: 20px;
+    }
+
+    .mail {
+      margin-left: 5px;
+    }
+
+    .linkedin {
+      position: relative;
+      margin-left: 150px;
+      top: -22px;
+    }
+
+    .header {
+      background-color: gray;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid black;
+      margin-right: 50px;
+      margin-top: 10px;
+    }
+
+    .details h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: black;
+      background-color:rgba(0, 0, 0, 0.533);
+    }
+
+    .details p {
+      font-size: 16px;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-
-    <h1>M. Sandeesha</h1>
-    <p>Location: Gudivada, India</p>
-    <p>Contact: <a href="tel:+916300645766">+91 6300645766</a></p>
-    <p>Email: <a href="mail:medankisandeesha@gmail.com">medankisandeesha@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/medanki-sandeesha-94b144334">medanki-sandeesha</a></p>
-
-    <div class="section">
-        <h2>Career Objective</h2>
-        <p>Having enhanced skills, I seek to contribute and grow in a dynamic environment while continuously improving my expertise and strengthening my knowledge.</p>
+  <div class="a4-page">
+    <div class="header">
+      <div>
+        <h1>M.Sandeesha</h1>
+        <h2 class="mail">
+          GUDIVADA, India
+          <a href="mailto:medankisandeesha@gmail.com" style="color: blueviolet;">medankisandeesha@gmail.com</a>
+        </h2>
+        <h2>
+          +91 6300645766
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/medankisandeesha-94b144334" target="_blank" rel="noopener noreferrer" style="color:blueviolet;">LinkedIn</a>
+          </div>
+        </h2>
+      </div>
+      <img src="photo.jpeg" alt="Sandeesha" class="photo" />
     </div>
 
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li>B.Tech in Electronics and Communication Engineering, PVPSIT (CGPA: 8.45)</li>
-            <li>Diploma in Electronics and Communication Engineering, VKR, VNB & AGK College (91.24%)</li>
-            <li>Secondary School Education, FR. Bianchi English Medium High School (CGPA: 79.5)</li>
-        </ul>
-    </div>
+    <div class="details">
+      <h3>CAREER OBJECTIVE</h3>
+      <p>Having enhanced skills, I seek to contribute and grow in a dynamic environment while continuously improving my expertise and strengthening my knowledge.</p>
+      <h3>EDUCATION</h3>
+      <div>
+        <strong>Prasad v. Potluri Siddhartha Institute of Technology (2023-2026)</strong><br>
+      </div>
+      <ul>
+        <li>Bachelor Of Technology in Electronics and Communication Engineering - CGPA-8.38</li>
+      </ul>
 
-    <div class="section">
-        <h2>Internship</h2>
-        <p>Completed an internship at Sense Semiconductors & IT Solutions Pvt. Ltd in Embedded Systems, gaining hands-on experience with microcontroller programming.</p>
-    </div>
+      <p><strong>VKR, VNB & AGK College of Engineering (2020-2023)</strong></p>
+      <ul>
+        <li>Diploma in Electronics and Communication Engineering - 91.24%</li>
+      </ul>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>Developed a Food Grain Moisture Sensor</li>
-            <li>Developed a Current Detection System</li>
-        </ul>
-    </div>
+      <p><strong>FR. Bianchi English Medium High School (2010-2020)</strong></p>
+      <ul>
+        <li>Secondary School Education - 79%</li>
+      </ul>
 
-    <div class="section">
-        <h2>Skill Set</h2>
-        <ul>
-            <li>Core: Circuit design, PCB design, IoT, System design through Verilog</li>
-            <li>Software Tools: Matlab, Multisim, Xilinx, Keil uVision, Ansys HFSS</li>
-            <li>Programming Languages: C, Java, Python</li>
-        </ul>
-    </div>
+      <h3>INTERNSHIP</h3>
+      <strong>Sense semiconductors & IT Solutions Pvt. Ltd</strong><br>
+      <ul>
+        <li>
+          Completed an internship at SSIT in Embedded Systems, gaining hands-on experience with microcontroller programming.
+        </li>
+      </ul>
 
-    <div class="section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>GATE 2025 - Qualified with a score of 276, AIR: 19,762</li>
-            <li>TCS CodeVita - Secured global rank of 6978</li>
-            <li>NPTEL System Design through Verilog - Certification (64%)</li>
-            <li>Google Cloud Computing Foundations Certificate</li>
-            <li>Java Certification (82%)</li>
-            <li>Python Certification (75%)</li>
-        </ul>
-    </div>
+      <h3>PROJECTS</h3>
+      <ul>
+        <li>Developed a Food Grain Moisture Sensor</li>
+        <li>Developed a Current Detection System</li>
+      </ul>
 
-    <div class="section">
-        <h2>Extra-Curricular Activities</h2>
-        <ul>
-            <li>Participated in SITAR 2K23 technical quiz (PVPSIT)</li>
-            <li>Poster presentation at SITAR 2K24 Fest</li>
-            <li>Won first prize in Rangoli competition</li>
-        </ul>
-    </div>
+      <h3>SKILL SET</h3>
+      <ul>
+        <li><strong>Core:</strong> Circuit design, PCB design, IOT, System design through verilog</li>
+        <li><strong>Software Tools:</strong> Matlab, Multisim, Xilinx, Keil uVision, Ansys HFSS</li>
+        <li><strong>Programming Languages:</strong> C, Java, Python</li>
+      </ul>
 
+      <h3>CERTIFICATIONS</h3>
+      <ul>
+        <li><strong>Gate Certification:</strong> Qualified in <a href="https://1drv.ms/b/c/6c3839013b74b639/EX2Gsdu_NCFGsy8t3fbJ87gBgpXzgISiQCckJw3J0m_NmQ?e=AR66Rn" target="_blank" rel="noopener noreferrer">Gate</a> 2025</li>
+        <li><strong>TCS CodeVita:</strong> Qualified for Round 2 <a href="https://1drv.ms/b/c/6c3839013b74b639/EQJKQCDNMqJJo9Z-U6Pm218B7MVjCN16i3YIth83YPzntg?e=smD1TG" target="_blank" rel="noopener noreferrer">TCS CodeVita</a></li>
+        <li><strong>NPTEL:</strong> System design through Verilog <a href="https://1drv.ms/b/c/6c3839013b74b639/EVX5scJNYQhOmKJXHMHRpBUBpENcLw5VMKzmyaVG1uj0pg?e=tU3dRO" target="_blank" rel="noopener noreferrer">Certification</a></li>
+        <li><strong>Google:</strong> Google Cloud Computing Foundations <a href="https://1drv.ms/b/c/6c3839013b74b639/EZbjihrUfntOtlVxU-pZ_1QBGFDXDvohobmNA77Tm0sNXA?e=uivCgu" target="_blank" rel="noopener noreferrer">Certificate</a></li>
+        <li><strong>Spoken Tutorial Certifications:</strong> <a href="https://1drv.ms/b/c/6c3839013b74b639/EXiV1a6PYpBEiD7iS7lZhcoBOYEgJYEItWis-Q6ArkbWsA?e=oYrU40" target="_blank" rel="noopener noreferrer">Java</a>, <a href="https://1drv.ms/b/c/6c3839013b74b639/EbRZ72kQbaBOvIv5WKd46poBzuH6UABkex5tiHiNOXUQug?e=2O7w9l" target="_blank" rel="noopener noreferrer">Python</a></li>
+      </ul>
+
+      <h3>EXTRA CURRICULAR ACTIVITIES</h3>
+      <ul>
+        <li>Participated in a technical quiz in SITAR 2K23 conducted by PVPSIT</li>
+        <li>Participated in poster presentation at SITAR 2K24 Fest</li>
+        <li>Participated in cultural events and won the first prize in Rangoli competition</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
